@@ -50,7 +50,7 @@ public class BasicJava {
     }
     
     // Get Average
-    public double GetAverage(double[] arr) {
+    public double GetAverage(int[] arr) {
         double sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum = sum + arr[i];
@@ -82,7 +82,7 @@ public class BasicJava {
     }
     
     // Square the values
-    public static ArrayList<Integer> SquareValues(ArrayList<Integer> arr) {
+    public ArrayList<Integer> SquareValues(ArrayList<Integer> arr) {
         ArrayList<Integer> arrX2 = new ArrayList<Integer>();
         for (Integer num : arr) {
             arrX2.add(num * num);
@@ -104,7 +104,7 @@ public class BasicJava {
     public ArrayList<Object> MaxMinAvg(int[] arr) {
         int max = arr[0];
         int min = arr[0];
-        int sum = 0;
+        double sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum = sum + arr[i];
             if (arr[i] > max) {
